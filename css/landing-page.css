@@ -17,10 +17,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Gotham A', 'Gotham B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
 }
-
+a{
+    text-decoration: none !important;
+}
 .topnav {
     font-size: 14px; 
 }
@@ -35,20 +37,20 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: linear-gradient( rgba(131, 210, 225, 0.20), rgba(131, 210, 225, 0.20) ),url(../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 40%;
+    padding-bottom: 10%;
 }
 
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 6em;
 }
 
 .intro-divider {
@@ -71,8 +73,11 @@ h6 {
     }
 
     ul.intro-social-buttons > li {
-        display: block;
+        display: inline-block;
         margin-bottom: 20px;
+        margin-top: 12px;
+        margin-left: 12px;
+        margin-right: 12px;
         padding: 0;
     }
 
@@ -143,6 +148,18 @@ h6 {
 }
 
 @media(max-width:767px) {
+    .navbar-brand {
+        margin-left: -5px !important;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #CE1F5B;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #CE1F5B;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent !important;
+}
     .banner h2 {
         margin: 0;
         text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -150,7 +167,7 @@ h6 {
     }
 
     ul.banner-social-buttons > li {
-        display: block;
+        display: inline-block;
         margin-bottom: 20px;
         padding: 0;
     }
@@ -158,13 +175,90 @@ h6 {
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+
 }
 
 footer {
-    padding: 50px 0;
+    padding: 16px 0;
     background-color: #f8f8f8;
 }
+footer p{
+    margin: 0;
+}
+footer .copyright {
+    display: block;
+    text-align: center;
+}
 
-p.copyright {
-    margin: 15px 0 0;
+.navbar-default {
+    background-color: white !important;
+    border-color: white !important;
+}
+.navbar-default a{
+    color: #CE1F5B !important;
+}
+
+.navbar-brand {
+    margin-left: -15px;
+    font-size: 28px;
+}
+
+.navbar-right li a{
+    font-size: 18px;
+}
+.intro-social-buttons button{
+    background-color: #CE1F5B !important;
+    border-color: #CE1F5B !important;
+}
+button.btn.btn-primary.btn-lg.slack-button:hover {
+    opacity: 0.9;
+}
+.intro-social-buttons .client-cta button {
+    padding: 10px 35px;
+}
+.intro-social-buttons .freelancer-cta a {
+    display: block;
+    margin: 16px 0;
+}
+.intro-social-buttons .client-cta a {
+    display: block;
+    margin: 16px 0;
+}
+.intro-message ul{
+    margin-top: 56px;
+}
+ul.banner-social-buttons > li {
+    display: inline-block;
+}
+ul.banner-social-buttons > p {
+    margin-top: 8px;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.sign-up-button{
+    border-color: #CE1F5B;
+    background-color: transparent;
+    color: #CE1F5B;
+    display: block;
+    margin: 32px auto 0px;
+}
+.btn-primary:hover {
+    background-color: #CE1F5B !important;
+    border-color: #CE1F5B;
+    color: white !important;
+}
+.contact{
+    text-align: center;
+}
+.sign-up{
+    text-align: center;
+}
+.sign-up button{
+    background-color: transparent;
+    border-color: white;
+    margin-top: 32px;
+    padding: 16px 80px;
 }
